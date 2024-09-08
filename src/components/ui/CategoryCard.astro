@@ -1,0 +1,14 @@
+---
+interface Props {
+    href: string;
+    image: string;
+    content: string;
+}
+
+const {href, image, content} = Astro.props;
+---
+
+<a href={href} class="mx-3 my-6 space-y-5 group">
+    <img src={`/${image}.webp`} alt={content} class="w-[300px] h-[300px] object-cover transform transition-transform duration-300 scale-90 group-hover:scale-100" />
+    <h3 class="border-t">{content}</h3>
+</a>
