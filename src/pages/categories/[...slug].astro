@@ -1,0 +1,11 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const { slug } = Astro.params;
+---
+
+<Layout title=`Categories - ${slug}`>
+  <section class="flex-1">
+    <h1 class="text-3xl">{slug}</h1>
+  </section>
+</Layout>
